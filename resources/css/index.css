@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #E8E6E3;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'english';
+    src: url('font/JetBrainsMono-Bold.ttf');
+}
+
+body, html {
+    height: 100%;
+    font-family: 'english', sans-serif;
+}
+
+body {
+    background-color: #CE800D;
+}
+
+#titleBar {
+    width: 100%;
+    height: 20px;
+    background-color: #C66A0D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+}
+
+#more {
+    cursor: pointer;
+}
+
+#close {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    cursor: pointer;
+}
+
+#title {
+    font-size: 20px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: rgba(187, 54, 13, 0.8);
+    box-shadow: 0 0 5px 1px rgba(104, 68, 13, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 60px;
+    z-index: 1;
+    right: 10px;
+    cursor: pointer;
+}
+
+#add {
+    left: 10px;
+}
+
+#star {
+    transform: scale(0.7, 0.7);
+}
+
+#board {
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    bottom: 0;
+}
+
+#word {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    background-color: #262829;
+    border: 2px solid #414547;
+}
+
+#translation {
+    font-family: cursive;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    background-color: #262829;
+    border: 2px solid #414547;
+    border-top: none;
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    color: #A49C90;
+}
+
+#look1 {
+    color: #A49C90;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+#look2 {
+    color: #A49C90;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    display: none;
+}
+
+#text2 {
+    display: none;
+}

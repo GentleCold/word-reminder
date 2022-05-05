@@ -1,0 +1,61 @@
+{
+    "applicationId": "Word Reminder",
+    "version": "1.0.0",
+    "defaultMode": "window",
+    "port": 0,
+    "documentRoot": "/resources/",
+    "url": "/",
+    "enableServer": true,
+    "enableNativeAPI": true,
+    "tokenSecurity": "one-time",
+    "logging": {
+        "enabled": true,
+        "writeToLogFile": true
+    },
+    "nativeAllowList": [
+        "window.*",
+        "os.setTray",
+        "app.*",
+        "storage.*"
+    ],
+    "modes": {
+        "window": {
+            "title": "Word Reminder",
+            "width": 200,
+            "height": 200,
+            "fullScreen": false,
+            "alwaysOnTop": true,
+            "icon": "/resources/icons/appIcon.png",
+            "enableInspector": false,
+            "borderless": true,
+            "maximize": false,
+            "hidden": false,
+            "resizable": false,
+            "exitProcessOnClose": false
+        },
+        "browser": {
+            "globalVariables": {
+                "TEST": "Test value browser"
+            },
+            "nativeBlockList": ["filesystem.*"]
+        },
+        "cloud": {
+            "url": "/resources/#cloud",
+            "nativeAllowList": ["app.*"]
+        },
+        "chrome": {
+            "width": 800,
+            "height": 500,
+            "args": "--user-agent=\"Neutralinojs chrome mode\"",
+            "nativeBlockList": ["filesystem.*", "os.*"]
+        }
+    },
+    "cli": {
+        "binaryName": "Word Reminder",
+        "resourcesPath": "/resources/",
+        "extensionsPath": "/extensions/",
+        "clientLibrary": "/resources/js/neutralino.js",
+        "binaryVersion": "4.5.0",
+        "clientVersion": "3.4.0"
+    }
+}
