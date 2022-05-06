@@ -6,6 +6,7 @@
     -webkit-user-drag: none;
     -webkit-user-select: none;
     overflow: hidden;
+    transition: transform 0.2s;
 }
 
 @font-face {
@@ -15,7 +16,8 @@
 
 body, html {
     height: 100%;
-    font-family: 'english', sans-serif;
+    font-family: 'english', cursive;
+    font-weight: bold;
 }
 
 body {
@@ -44,9 +46,8 @@ body {
 }
 
 #title {
-    font-size: 20px;
     position: absolute;
-    top: 30px;
+    top: 25px;
     left: 10px;
 }
 
@@ -60,14 +61,10 @@ body {
     width: 30px;
     height: 30px;
     position: absolute;
-    bottom: 60px;
+    bottom: 75px;
     z-index: 1;
     right: 10px;
     cursor: pointer;
-}
-
-#add {
-    left: 10px;
 }
 
 #star {
@@ -77,11 +74,11 @@ body {
 #board {
     position: absolute;
     width: 100%;
-    height: 75px;
+    height: 90px;
     bottom: 0;
 }
 
-#word {
+.block1 {
     display: flex;
     text-align: center;
     align-items: center;
@@ -92,9 +89,7 @@ body {
     border: 2px solid #414547;
 }
 
-#translation {
-    font-family: cursive;
-    font-weight: bold;
+.block2 {
     display: flex;
     text-align: center;
     align-items: center;
@@ -106,20 +101,38 @@ body {
     border-top: none;
 }
 
+input {
+    width: 50%;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 5px;
+    line-height: 100%;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    display: none;
+}
+
 .icon {
     position: absolute;
     left: 10px;
     color: #A49C90;
 }
 
-#look1 {
+#edit {
+    cursor: pointer;
+}
+
+#trash {
     color: #A49C90;
     cursor: pointer;
     position: absolute;
     right: 10px;
 }
 
-#look2 {
+#check {
     color: #A49C90;
     cursor: pointer;
     position: absolute;
@@ -127,6 +140,31 @@ body {
     display: none;
 }
 
+#look1 {
+    cursor: pointer;
+}
+
+#look2 {
+    cursor: pointer;
+    display: none;
+}
+
+.text {
+    width: 60%;
+    cursor: zoom-in;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
 #text2 {
+    display: none;
+}
+
+#setting {
+    width: 100%;
+    height: 140px;
+    background-color: #262829;
+    border: 2px solid #414547;
+    z-index: 2;
     display: none;
 }
