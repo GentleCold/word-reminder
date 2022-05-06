@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <title>Word Reminder</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
 </head>
 <body>
 <div id="titleBar"><i class="fas fa-ellipsis-h" id="more"></i></div>
 <i class="fas fa-times" id="close"></i>
 <div id="title"></div>
-<div class="circle" id="mark"><i class="fas fa-bookmark" id="star"></i></div>
+
 <div id="board">
     <div class="block1" id="word">
         <i class="fas fa-edit icon" id="edit"></i>
+        <i class="fas fa-bookmark icon" id="mark"></i>
         <div class="text" id="text1"></div>
         <label for="input1"></label>
         <input id="input1" maxlength="45">
     </div>
     <div class="block2" id="translation">
-        <i class="fas fa-trash-alt" id="trash"></i>
+        <i class="fas fa-trash-alt icon" id="trash"></i>
         <i class="fas fa-eye-slash icon" id="look1"></i>
         <i class="fas fa-eye icon" id="look2"></i>
+        <i class="fas fa-check icon" id="check"></i>
         <div class="text" id="text2"></div>
         <label for="input2"></label>
         <input id="input2" maxlength="20">
-        <i class="fas fa-check" id="check"></i>
     </div>
 </div>
 <div id="setting"></div>

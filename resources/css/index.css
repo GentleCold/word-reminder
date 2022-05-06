@@ -6,7 +6,7 @@
     -webkit-user-drag: none;
     -webkit-user-select: none;
     overflow: hidden;
-    transition: transform 0.2s;
+    transition: transform 0.5s, color 0.2s, height 0.2s;
 }
 
 @font-face {
@@ -40,35 +40,16 @@ body {
 
 #close {
     position: absolute;
-    right: 10px;
-    top: 30px;
+    right: 5px;
+    top: 25px;
     cursor: pointer;
+    padding: 5px;
 }
 
 #title {
     position: absolute;
     top: 25px;
     left: 10px;
-}
-
-.circle {
-    border-radius: 50%;
-    background-color: rgba(187, 54, 13, 0.8);
-    box-shadow: 0 0 5px 1px rgba(104, 68, 13, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 75px;
-    z-index: 1;
-    right: 10px;
-    cursor: pointer;
-}
-
-#star {
-    transform: scale(0.7, 0.7);
 }
 
 #board {
@@ -116,35 +97,41 @@ input {
 }
 
 .icon {
-    position: absolute;
-    left: 10px;
     color: #A49C90;
+    cursor: pointer;
+    padding: 5px;
 }
 
 #edit {
-    cursor: pointer;
+    position: absolute;
+    left: 5px;
+}
+
+#mark {
+    position: absolute;
+    right: 5px;
 }
 
 #trash {
-    color: #A49C90;
-    cursor: pointer;
     position: absolute;
-    right: 10px;
+    right: 5px;
 }
 
 #check {
-    color: #A49C90;
-    cursor: pointer;
     position: absolute;
-    right: 10px;
+    right: 5px;
     display: none;
 }
 
 #look1 {
+    position: absolute;
+    left: 5px;
     cursor: pointer;
 }
 
 #look2 {
+    position: absolute;
+    left: 5px;
     cursor: pointer;
     display: none;
 }
