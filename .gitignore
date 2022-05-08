@@ -10,5 +10,8 @@ fontawesome
 neutralino.js
 
 # Neutralinojs related files
+backup
+setup.iss
+word
 .storage
 *.log

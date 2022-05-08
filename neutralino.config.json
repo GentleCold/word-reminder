@@ -16,7 +16,8 @@
         "window.*",
         "os.setTray",
         "app.*",
-        "storage.*"
+        "storage.*",
+        "filesystem.readFile"
     ],
     "modes": {
         "window": {

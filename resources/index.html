@@ -8,26 +8,41 @@
 </head>
 <body>
 <div id="titleBar"><i class="fas fa-ellipsis-h" id="more"></i></div>
+
 <i class="fas fa-times" id="close"></i>
+<div id="nextBoard"><i class="fas fa-undo-alt" id="next"></i></div>
+
 <div id="title"></div>
+
+<div id="listBoard">
+    <div class="list" id="list1">YOUR-WORD</div>
+    <div class="list" id="list2">CORE-700</div>
+    <div class="list" id="list3">CET-4</div>
+    <div class="list" id="list4">CET-6</div>
+    <div class="list" id="list5">POST-CET-6</div>
+</div>
 
 <div id="board">
     <div class="block1" id="word">
         <i class="fas fa-edit icon" id="edit"></i>
         <i class="fas fa-bookmark icon" id="mark"></i>
+        <i class="fas fa-backspace icon" id="cancel"></i>
         <div class="text" id="text1"></div>
         <label for="input1"></label>
         <input id="input1" maxlength="45">
     </div>
-    <div class="block2" id="translation">
-        <i class="fas fa-trash-alt icon" id="trash"></i>
-        <i class="fas fa-eye-slash icon" id="look1"></i>
-        <i class="fas fa-eye icon" id="look2"></i>
-        <i class="fas fa-check icon" id="check"></i>
-        <div class="text" id="text2"></div>
-        <label for="input2"></label>
-        <input id="input2" maxlength="20">
+    <div id="scroll">
+        <div class="block2" id="translation">
+            <i class="fas fa-trash-alt icon" id="trash"></i>
+            <i class="fas fa-eye-slash icon" id="look1"></i>
+            <i class="fas fa-eye icon" id="look2"></i>
+            <i class="fas fa-check icon" id="check"></i>
+            <div class="text" id="text2"></div>
+            <label for="input2"></label>
+            <input id="input2" maxlength="20">
+        </div>
     </div>
+
 </div>
 <div id="setting"></div>
 </body>
